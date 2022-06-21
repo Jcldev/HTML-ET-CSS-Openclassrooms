@@ -7,21 +7,84 @@ A[attribut*="Valeur"] : une balise, un attribut et une valeur,  */
 .salutations
 {
     color: blue;
+    /* font-size: 30px; */
+    font-size: 1.4em;
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    opacity: 0.6;
 }
 
-a[title]
+h1
 {
-    color: blue;
+    color: maroon;
 }
 
-a[title="Cliquez ici"]
+p
 {
-    color: blue;
+    color: rgb(240,96,204);
 }
 
-a[title*="ici"]
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body
 {
-    color: blue;
+    background-color: black; /* Le fond de la page sera noir */
+    color: white; /* Le texte de la page sera blanc */
+    background-image: url("images/neige.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: repeat;
+    background-position: top right;
+}
+
+mark
+{
+    /* La couleur de fond prend le pas sur celle de toute la page */
+    background-color: red;
+    color: black;
+}
+
+.test
+{
+    background-image: url("soleil.png");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: top right; /* Le fond sera placé en haut à droite */
+}
+
+.test2
+{
+    background: url("soleil.png") fixed no-repeat top right;
+}
+
+.test3
+{
+    background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed;
+}
+
+.test4
+{
+    background-color: rgb(255,0,0); /* Pour les navigateurs anciens */
+    background-color: rgba(255,0,0,0.5); /* Pour les navigateurs plus récents */
+}
+
+/* Le fichier de police (ici MaSuperPolice.eot) doit ici être situé dans le même dossier que le fichier CSS (ou dans un sous-dossier, 
+si vous utilisez un chemin relatif). */
+@font-face {
+    font-family: 'MaSuperPolice';
+    src: url('MaSuperPolice.eot') format('eot'),
+         url('MaSuperPolice.woff') format('woff'),
+         url('MaSuperPolice.ttf') format('truetype'),
+         url('MaSuperPolice.svg') format('svg');
+}
+
+.imageflottante
+{
+    float: left;
+}
+.dessous
+{
+    clear: both;
 }
 
 
