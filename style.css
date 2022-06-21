@@ -1,0 +1,27 @@
+/* p : paragraphe   h1 : titre em : texte important */
+/* p, em, h1, .class, #id */
+/* * est un selecteur universel, A B : une balise contenue dans une autre, A + B : une balise qui en suit une autre
+A[attribut] : une balise qui possede un attribut, A[attribut="Valeur"] : une balise, un attribut et une valeur exacte
+A[attribut*="Valeur"] : une balise, un attribut et une valeur,  */
+/* .introduction */
+.salutations
+{
+    color: blue;
+}
+
+a[title]
+{
+    color: blue;
+}
+
+a[title="Cliquez ici"]
+{
+    color: blue;
+}
+
+a[title*="ici"]
+{
+    color: blue;
+}
+
+
