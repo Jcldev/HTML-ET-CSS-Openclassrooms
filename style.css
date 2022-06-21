@@ -19,6 +19,12 @@ A[attribut*="Valeur"] : une balise, un attribut et une valeur,  */
 h1
 {
     color: maroon;
+    border: 3px blue dashed;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 6px 6px 0px black;
+    text-shadow: 2px 2px 4px black;
 }
 
 p
@@ -29,9 +35,9 @@ p
 /* On travaille sur la balise body, donc sur TOUTE la page */
 body
 {
-    background-color: black; /* Le fond de la page sera noir */
+    /*background-color: black; *//* Le fond de la page sera noir */
     color: white; /* Le texte de la page sera blanc */
-    background-image: url("images/neige.jpg");
+    /* background-image: url("images/neige.jpg"); */
     background-attachment: fixed; /* Le fond restera fixe */
     background-repeat: repeat;
     background-position: top right;
